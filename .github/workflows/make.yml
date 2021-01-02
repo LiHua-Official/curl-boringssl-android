@@ -10,20 +10,20 @@
 name: Build my curl and busybox
 
 on:
-  repository_dispatch:
-  workflow_dispatch:
-    inputs:
-      ssh:
-        description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+  #repository_dispatch:
+  #workflow_dispatch:
+    #inputs:
+     # ssh:
+      #  description: 'SSH connection to Actions'
+       # required: false
+        #default: 'false'
   push:
     branches: 
       - master
-  schedule:
-    - cron: 0 1 * * SAT
-  watch:
-    types: started
+  #schedule:
+    #- cron: 0 1 * * SAT
+  #watch:
+    #types: started
 
 
 jobs:
